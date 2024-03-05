@@ -12,6 +12,7 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.rrbofficial.libraryapp.ui.theme.LibraryAppTheme
@@ -37,7 +38,7 @@ class MainActivity : ComponentActivity() {
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun MainScreen(){
-    Column {
+    Column(horizontalAlignment = Alignment.CenterHorizontally) {
         OutlinedTextField(value = "",
             onValueChange ={},
             label = { Text(text = "Enter the Book Name")},
